@@ -1,0 +1,19 @@
+.imageGallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 4em;
+    grid-column-gap: 0;
+    justify-content: center;
+}
+
+@media (min-width: 600px) {
+    .imageGallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .imageGallery img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+}
